@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, ArrowLeft, Scan, Eye, TrendingUp, Lightbulb, Shield, Zap, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/lookslens-logo.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
