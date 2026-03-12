@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Scan, Eye, Lightbulb, TrendingUp, User } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoImg from "@/assets/lookslens-logo.png";
 
 const navItems = [
   { icon: Scan, label: "Capture", path: "/app" },
