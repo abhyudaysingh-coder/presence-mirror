@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight, Scan, Eye, TrendingUp } from "lucide-react";
 import MirrorVisual from "@/components/MirrorVisual";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/lookslens-logo.png";
 
 const Landing = () => {
   const navigate = useNavigate();
