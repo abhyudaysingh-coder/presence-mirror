@@ -19,10 +19,16 @@ const LearnMore = () => {
       {/* Nav */}
       <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur-xl border-b border-border/40">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-2 text-muted-foreground hover:text-foreground">
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-2 text-muted-foreground hover:text-foreground">
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </Button>
+            <div className="flex items-center gap-2">
+              <img src={logoImg} alt="LooksLens" className="w-7 h-7 rounded-md object-contain" />
+              <span className="font-display text-sm font-semibold hidden sm:inline">LooksLens</span>
+            </div>
+          </div>
           <Button size="sm" onClick={() => navigate("/app")} className="glow-ring">
             Start Analysis
             <ArrowRight className="ml-1 w-4 h-4" />
