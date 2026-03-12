@@ -82,7 +82,7 @@ const Landing = () => {
                 variant="ghost"
                 size="lg"
                 className="h-12 text-muted-foreground hover:text-foreground"
-                onClick={() => navigate("/app")}
+                onClick={() => navigate("/learn-more")}
               >
                 Learn More
               </Button>
