@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight, Scan, Eye, TrendingUp } from "lucide-react";
 import MirrorVisual from "@/components/MirrorVisual";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/lookslens-logo.png";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -23,9 +24,7 @@ const Landing = () => {
         className="relative z-10 flex items-center justify-between px-8 py-6 max-w-7xl mx-auto"
       >
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-            <Eye className="w-4 h-4 text-primary" />
-          </div>
+          <img src={logoImg} alt="LooksLens" className="w-8 h-8 rounded-lg object-contain" />
           <span className="font-display text-lg font-semibold tracking-tight">LooksLens</span>
         </div>
         <Button

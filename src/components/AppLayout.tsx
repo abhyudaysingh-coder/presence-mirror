@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Scan, Eye, Lightbulb, TrendingUp, User } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoImg from "@/assets/lookslens-logo.png";
 
 const navItems = [
   { icon: Scan, label: "Capture", path: "/app" },
@@ -30,11 +31,12 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         className="fixed left-0 top-0 h-screen w-16 flex flex-col items-center py-6 border-r border-border/50 bg-card/40 backdrop-blur-xl z-50"
       >
         {/* Logo */}
-        <div className="w-9 h-9 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-8 cursor-pointer"
+        <img
+          src={logoImg}
+          alt="LooksLens"
+          className="w-9 h-9 rounded-lg object-contain mb-8 cursor-pointer hover:opacity-80 transition-opacity"
           onClick={() => navigate("/")}
-        >
-          <Eye className="w-4 h-4 text-primary" />
-        </div>
+        />
 
         {/* Nav Items */}
         <div className="flex-1 flex flex-col items-center gap-1">

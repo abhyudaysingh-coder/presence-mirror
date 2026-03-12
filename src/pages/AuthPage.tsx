@@ -9,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { z } from 'zod';
 import { useAuth } from '@/contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
+import logoImg from '@/assets/lookslens-logo.png';
 
 const loginSchema = z.object({
   email: z.string().trim().email('Please enter a valid email').max(255),
@@ -126,9 +127,7 @@ const AuthPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                <Eye className="w-6 h-6 text-primary" />
-              </div>
+              <img src={logoImg} alt="LooksLens" className="w-12 h-12 rounded-xl object-contain" />
               <span className="font-display text-2xl font-semibold text-foreground">LooksLens</span>
             </div>
 
@@ -175,9 +174,7 @@ const AuthPage = () => {
         >
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-3 mb-10 justify-center">
-            <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-              <Eye className="w-5 h-5 text-primary" />
-            </div>
+            <img src={logoImg} alt="LooksLens" className="w-10 h-10 rounded-xl object-contain" />
             <span className="font-display text-xl font-semibold text-foreground">LooksLens</span>
           </div>
 
