@@ -9,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { z } from 'zod';
 import { useAuth } from '@/contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
+import logoImg from '@/assets/lookslens-logo.png';
 
 const loginSchema = z.object({
   email: z.string().trim().email('Please enter a valid email').max(255),
