@@ -12,6 +12,7 @@ import InsightDashboard from "./pages/InsightDashboard";
 import ImprovementLab from "./pages/ImprovementLab";
 import ProgressTracker from "./pages/ProgressTracker";
 import ProfilePage from "./pages/ProfilePage";
+import LearnMore from "./pages/LearnMore";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/learn-more" element={<LearnMore />} />
             <Route path="/auth" element={<AuthPage />} />
             <Route path="/app" element={<ProtectedRoute><CaptureStudio /></ProtectedRoute>} />
             <Route path="/app/insights" element={<ProtectedRoute><InsightDashboard /></ProtectedRoute>} />
